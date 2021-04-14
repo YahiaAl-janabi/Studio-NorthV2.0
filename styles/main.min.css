@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}* .header{background-color:brown;display:flex;flex-wrap:wrap;height:10vh;justify-content:space-between}* .header .title{background-color:cadetblue}* .header .nav{width:40vw;background-color:darkblue}* .header .nav ul{margin:1.5rem;margin-left:10rem;list-style:none}* .header .nav ul li{font-size:1.5rem;margin:1rem;background-color:darkmagenta;float:left}
+/*# sourceMappingURL=main.min.css.map */
