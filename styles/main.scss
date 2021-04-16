@@ -74,4 +74,25 @@
       }
     }
   }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    .tabletop {
+      width: calc(100% / 3);
+      .card {
+        background-color: rgb(39, 98, 138);
+        margin: 2rem;
+        img {
+          padding: 2rem;
+          width: 100%;
+        }
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
