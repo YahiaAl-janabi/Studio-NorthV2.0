@@ -1,3 +1,7 @@
+$dark-blue: #222;
+$green: #90feb5;
+$action-color: $green;
+
 @font-face {
   font-family: "Brush King";
   src: local("Brush King"), url("/Fonts/Brush\ King.otf") format("otf");
@@ -85,109 +89,256 @@
     -ms-box-orient: horizontal;
     justify-content: space-evenly;
     font-family: "Roboto", sans-serif;
+
     .tabletop {
       .card {
-        height: 45rem;
+        height: 41rem;
         background-color: rgba(0, 0, 0, 0.034);
         margin: 2rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-top: 2rem;
 
-        img {
+        figure.zoom {
+          & img:hover {
+            opacity: 0;
+          }
+          img {
+            transition: opacity 0.5s;
+            display: block;
+            width: 100%;
+          }
+          background-position: 50% 50%;
+          position: relative;
+          overflow: hidden;
+          cursor: zoom-in;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
           width: 25rem;
           margin-left: auto;
           margin-right: auto;
-          display: block;
-          transition: all 1s;
-        }
-        img:hover {
-          transform: scale(1.5);
-          border-radius: 5rem;
         }
 
         h2 {
+          letter-spacing: 0.05rem;
           margin-top: 2rem;
           text-align: center;
         }
         p {
+          letter-spacing: 0.05rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.788);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
           line-height: 1.5rem;
           width: 80%;
+        }
+        .angled-gradient-button {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2rem;
+          display: block;
+          background-size: 220%;
+          box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+          color: #000;
+          background-color: transparent;
+          background-position: 95%;
+          border: 0.15rem solid #000;
+          text-transform: uppercase;
+          padding: 8px 16px;
+          border-radius: 3px;
+          transition: all 0.2s ease-out;
+          font-weight: 600;
+          cursor: pointer;
+          letter-spacing: 0.05rem;
+          background-image: linear-gradient(
+            90deg,
+            #000 0%,
+            #000 50%,
+            transparent 50%,
+            transparent 100%
+          );
+          font-size: 14px;
+        }
+
+        .angled-gradient-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+          background-position: 0;
+          color: #fff;
+        }
+
+        .angled-gradient-button:active {
+          transform: translateY(-1px);
         }
       }
     }
 
     .advanced {
       .card {
-        height: 45rem;
+        height: 41rem;
         background-color: rgba(0, 0, 0, 0.034);
         margin: 2rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-top: 2rem;
-        img {
+
+        figure.zoom {
+          & img:hover {
+            opacity: 0;
+          }
+          img {
+            transition: opacity 0.5s;
+            display: block;
+            width: 100%;
+          }
+          background-position: 50% 50%;
+          position: relative;
+          overflow: hidden;
+          cursor: zoom-in;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
           width: 14rem;
           margin-left: auto;
           margin-right: auto;
-          display: block;
-          transition: all 1s;
-        }
-        img:hover {
-          transform: scale(1.5);
-          border-radius: 5rem;
         }
         h2 {
+          letter-spacing: 0.05rem;
           margin-top: 2rem;
           text-align: center;
         }
         p {
+          letter-spacing: 0.05rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.788);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
           line-height: 1.5rem;
           width: 80%;
+        }
+        .angled-gradient-button {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2rem;
+          display: block;
+          background-size: 220%;
+          box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+          color: #000;
+          background-color: transparent;
+          background-position: 95%;
+          border: 0.15rem solid #000;
+          text-transform: uppercase;
+          padding: 8px 16px;
+          border-radius: 3px;
+          transition: all 0.2s ease-out;
+          font-weight: 600;
+          cursor: pointer;
+          letter-spacing: 0.05rem;
+          background-image: linear-gradient(
+            90deg,
+            #000 0%,
+            #000 50%,
+            transparent 50%,
+            transparent 100%
+          );
+          font-size: 14px;
+        }
+
+        .angled-gradient-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+          background-position: 0;
+          color: #fff;
+        }
+
+        .angled-gradient-button:active {
+          transform: translateY(-1px);
         }
       }
     }
 
     .showcase {
       .card {
-        height: 45rem;
+        height: 41rem;
         background-color: rgba(0, 0, 0, 0.034);
         margin: 2rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-top: 2rem;
-        img {
+
+        figure.zoom {
+          & img:hover {
+            opacity: 0;
+          }
+          img {
+            transition: opacity 0.5s;
+            display: block;
+            width: 100%;
+          }
+          background-position: 50% 50%;
+          position: relative;
+          overflow: hidden;
+          cursor: zoom-in;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
           width: 17rem;
           margin-left: auto;
           margin-right: auto;
-          display: block;
-          transition: all 1s;
-        }
-        img:hover {
-          transform: scale(1.5);
-          border-radius: 5rem;
         }
         h2 {
+          letter-spacing: 0.05rem;
           margin-top: 2rem;
           text-align: center;
         }
         p {
+          letter-spacing: 0.05rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.788);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
           line-height: 1.5rem;
           width: 80%;
+        }
+        .angled-gradient-button {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2rem;
+          display: block;
+          background-size: 220%;
+          box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+          color: #000;
+          background-color: transparent;
+          background-position: 95%;
+          border: 0.15rem solid #000;
+          text-transform: uppercase;
+          padding: 8px 16px;
+          border-radius: 3px;
+          transition: all 0.2s ease-out;
+          font-weight: 600;
+          cursor: pointer;
+          letter-spacing: 0.05rem;
+          background-image: linear-gradient(
+            90deg,
+            #000 0%,
+            #000 50%,
+            transparent 50%,
+            transparent 100%
+          );
+          font-size: 14px;
+        }
+
+        .angled-gradient-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+          background-position: 0;
+          color: #fff;
+        }
+
+        .angled-gradient-button:active {
+          transform: translateY(-1px);
         }
       }
     }
