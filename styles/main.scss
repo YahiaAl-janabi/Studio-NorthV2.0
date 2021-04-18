@@ -19,18 +19,28 @@ $action-color: $green;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    height: 10vh;
+    height: 13vh;
     justify-content: space-between;
     top: 0;
 
     .title {
+      margin: auto;
+      margin-left: 3.5rem;
+      text-align: center;
       color: white;
-      margin-top: 1rem;
-      margin-left: 5rem;
-      width: 40vw;
+
       font-family: "Brush King";
       font-size: 1.7rem;
       letter-spacing: 0.2rem;
+      span {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 10px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #e7e7e7;
+        letter-spacing: 0.3em;
+      }
     }
 
     .nav {
@@ -39,8 +49,8 @@ $action-color: $green;
 
       ul {
         position: absolute;
-        right: 1.5rem;
-        padding: 1.5rem;
+        right: 1rem;
+        top: 2rem;
         list-style: none;
 
         li {
@@ -82,8 +92,27 @@ $action-color: $green;
       }
     }
   }
+
+  .servicetop {
+    margin-top: 9rem;
+    text-align: center;
+    p {
+      color: rgba(0, 0, 0, 0.658);
+      line-height: 3rem;
+      letter-spacing: 0.05rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      span {
+        border-bottom: 1px solid #000;
+        padding-bottom: 0.7rem;
+        font-size: 1.5rem;
+        color: black;
+      }
+    }
+  }
+
   .services {
-    margin-top: 10rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,9 +155,9 @@ $action-color: $green;
           text-align: center;
         }
         p {
-          letter-spacing: 0.05rem;
-          font-weight: 500;
-          color: rgba(0, 0, 0, 0.788);
+          letter-spacing: 0.03rem;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.658);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
@@ -210,9 +239,9 @@ $action-color: $green;
           text-align: center;
         }
         p {
-          letter-spacing: 0.05rem;
-          font-weight: 500;
-          color: rgba(0, 0, 0, 0.788);
+          letter-spacing: 0.03rem;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.658);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
@@ -294,9 +323,9 @@ $action-color: $green;
           text-align: center;
         }
         p {
-          letter-spacing: 0.05rem;
-          font-weight: 500;
-          color: rgba(0, 0, 0, 0.788);
+          letter-spacing: 0.03rem;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.658);
           margin: auto;
           margin-top: 2rem;
           text-align: center;
