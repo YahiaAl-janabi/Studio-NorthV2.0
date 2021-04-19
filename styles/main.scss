@@ -105,8 +105,9 @@ $action-color: $green;
       span {
         border-bottom: 1px solid #000;
         padding-bottom: 0.7rem;
-        font-size: 1.5rem;
-        color: black;
+        font-size: 1.7rem;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 600;
       }
     }
   }
