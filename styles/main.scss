@@ -1,7 +1,3 @@
-$dark-blue: #222;
-$green: #90feb5;
-$action-color: $green;
-
 @font-face {
   font-family: "Brush King";
   src: local("Brush King"), url("/Fonts/Brush\ King.otf") format("otf");
@@ -94,7 +90,7 @@ $action-color: $green;
   }
 
   .servicetop {
-    margin-top: 9rem;
+    margin-top: 12rem;
     text-align: center;
     p {
       color: rgba(0, 0, 0, 0.658);
@@ -375,6 +371,22 @@ $action-color: $green;
     }
   }
   .gallarysection {
+    h1 {
+      margin: auto;
+      width: 6rem;
+      text-align: center;
+      margin-top: 6rem;
+      margin-bottom: 5rem;
+      border-bottom: 1px solid #000;
+      padding-bottom: 0.7rem;
+      font-size: 1.7rem;
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 600;
+      line-height: 1.5rem;
+      letter-spacing: 0.05rem;
+      font-family: "Roboto", sans-serif;
+    }
+
     .hello {
       opacity: 1 !important;
     }
@@ -395,8 +407,8 @@ $action-color: $green;
     .full .content img {
       left: 50%;
       transform: translate3d(0, 0, 0);
-      animation: zoomin 1s ease;
-      max-width: 100%;
+
+      max-width: 50%;
       max-height: 100%;
       margin: auto;
     }
