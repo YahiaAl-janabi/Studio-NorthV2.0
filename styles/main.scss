@@ -2,7 +2,9 @@
   font-family: "Brush King";
   src: local("Brush King"), url("/Fonts/Brush\ King.otf") format("otf");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
